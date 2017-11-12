@@ -4,77 +4,82 @@
     margin: 0;
 }
 
-/*html {
+html {
     background: black;
-}*/
-
-#wrap {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 205px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 
-#header-images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    animation: move 15s infinite linear;
+#wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 205px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  animation: move 20s infinite linear;
 }
 
 @keyframes move {
-    from {
-        left: 0;
-    }
-    to {
-        left: -2200px;
-    }
+  from {
+    left: 0;
+  }
+  to {
+    left: -2450px;
+  }
 }
 
-#header-images > div {
-    width: 400px;
-    height: 200px;
-    margin: 0;
-    padding: 0;
-    background-size: 400px auto;
-    background-position: center;
-    display: block;
-    position: absolute;
-    border-right: 2px solid black;
-    border-bottom: 3px solid black;
+#header > div {
+  width: 600px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border-right: 2px solid black;
+  background-position: center;
+  background-size: 600px auto;
+  display: block;
+  position: absolute;
+  border-bottom: 5px solid black;
 }
 
-.image-1 {
-    background-image: url("../images/be-creative.jpeg");
-    margin-left: 0;
+#header > .one {
+  background:  url("../images/be-creative.jpeg");
+  margin-left: 0;
 }
 
-.image-2 {
-    background-image: url("../images/artsy-wall.jpeg");
-    margin-left: 402px;
+#header > .two {
+  background:  url("../images/artsy-wall.jpeg");
+  margin-left: 602px;
 }
 
-.image-3 {
-    background-image: url("../images/broken-bike.jpg");
-    margin-left: 804px;
+#header > .three {
+  background:  url("../images/broken-bike.jpg");
+  margin-left: 1204px;
 }
 
-.image-4 {
-    background-image: url("../images/colorful-glow.jpeg");
-    margin-left: 1206px;
+#header > .four {
+  background:  url("../images/colorful-glow.jpeg");
+  margin-left: 1806px;
 }
 
-.image-5 {
-    background-image: url("../images/photo-pile.jpeg");
-    margin-left: 1608px;
+#header > .five {
+  background:  url("../images/photo-pile.jpeg");
+  margin-left: 2408px;
+}
+
+#header > .six {
+  background:  url("../images/leaf.jpeg");
+  margin-left: 3010px;
 }
 
 .row {
@@ -123,9 +128,8 @@
     }
 }
 
-
 .homepage-title {
-    margin-top: 200px;
+    margin-top: 205px;
 }
 
 p {
@@ -137,5 +141,5 @@ p {
     text-transform: uppercase;
     border-bottom: 2px solid #f1f1f1;
     width: 30%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
