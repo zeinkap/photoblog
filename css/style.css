@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1.1px;
+}
+
+html {
+    background: black;
+}
+
+.homepage-title {
+    margin-top: 205px;
+}
+
+.header-title {
+    color: white;
+    font-family: "Raleway", "serif";
+    margin-left: 1.66%;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    padding-bottom: 10px;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 1.66%;
+  margin-top: 10px;
+}
+
+.topics li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.topics a:hover {
+  color: black;
+  background-color: white;
+  font-size: 18px;
+  padding: 3px 5px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+#wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 205px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  animation: move 20s infinite linear;
+}
+
+@keyframes move {
+  from {
+    left: 0;
+  }
+  to {
+    left: -2450px;
+  }
+}
+
+#header > div {
+  width: 600px;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  border-right: 2px solid black;
+  background-position: center;
+  background-size: 600px auto;
+  display: block;
+  position: absolute;
+  border-bottom: 5px solid black;
+}
+
+#header > .one {
+  background:  url("../images/be-creative.jpeg");
+  margin-left: 0;
+}
+
+#header > .two {
+  background:  url("../images/artsy-wall.jpeg");
+  margin-left: 602px;
+}
+
+#header > .three {
+  background:  url("../images/broken-bike.jpg");
+  margin-left: 1204px;
+}
+
+#header > .four {
+  background:  url("../images/colorful-glow.jpeg");
+  margin-left: 1806px;
+}
+
+#header > .five {
+  background:  url("../images/photo-pile.jpeg");
+  margin-left: 2408px;
+}
+
+#header > .six {
+  background:  url("../images/leaf.jpeg");
+  margin-left: 3010px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-3 img {
+    width: 30%; /*so pics are taking up 90% width total across*/
+    float: left; /*To get rid of the whitespace that the browser provides */
+    margin: 1.66%; /*calculated by taking remaining percentage (10%) and divided by 6 (number of margins)*/
+    filter: grayscale(.8);
+}
+
+.col-3 img:hover {
+    animation: colorful ease-in-out .75s forwards
+}
+
+.col-3 img:hover::before {
+    animation: pop .75s;
+}
+
+@keyframes colorful {
+    0% {
+        filter: grayscale(.8);
+    }
+    50% {
+        filter: grayscale(.5);
+    }
+    100% {
+        filter: grayscale(0);
+    }
+}
+
+@keyframes pop {
+    0% {
+        opacity: .5;
+        background: blue;
+    }
+    50% {
+        opacity: 1;
+        background: orange;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.footer-text {
+    color: white;
+    text-align: center;
+}
